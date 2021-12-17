@@ -1,0 +1,13 @@
+// Nav Styles
+a.list-group-item {
+    color: #A02C2C;
+}
+.navbar-light a.navbar-brand {
+    color: #A02C2C;
+    font-weight: bold;
+}
+.list-group-item.active {
+    background-color: #FF2B29;
+    border-color: #A02C2C;
+    color: #fff;
+}

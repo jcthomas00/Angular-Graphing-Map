@@ -1,0 +1,47 @@
+<!--Main Navigation-->
+<header>
+
+  <!-- Navbar -->
+  <nav
+       id="main-navbar"
+       class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+       >
+    <div class="container-fluid">
+      <!-- Brand -->
+      <h1>
+        <a class="navbar-brand" href="home">
+          World is on Fire &nbsp;
+          <img class="mr-5" src="https://cdn.pixabay.com/photo/2018/05/20/01/40/pokemon-3414807_1280.png" height="25" alt="" loading="lazy" />
+              
+        </a>
+      </h1>
+      <!-- Right links -->
+      <ul class="navbar-nav ms-auto d-flex flex-row ">
+        <!-- Notification dropdown -->
+        <li class="nav-item">
+          <a
+          routerLink="home"
+          [ngClass]="{'list-group-item':true, 'py-2':true, 'ripple':true, 'active':this.currentUrl==='home'}">
+          <i class="fas fa-home fa-fw me-3"></i><span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a
+              routerLink="dashboard"
+              [ngClass]="{'list-group-item':true, 'py-2':true, 'ripple':true, 'active':this.currentUrl==='dashboard'}">
+              <i class="fas fa-chart-bar fa-fw me-3"></i><span>Dashboard</span>
+            </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+<!--Main layout-->
+<main style="margin-top: 58px">
+  <router-outlet></router-outlet>
+</main>
+
+<!--Footer-->
+<app-footer></app-footer>
