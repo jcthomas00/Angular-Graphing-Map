@@ -22,7 +22,6 @@ export class DashboardComponent implements OnInit {
 
   //a new location was clicked
   handleLocationChange = (newLocation:[number, number]):void  => {
-    console.log(newLocation);
     this.upDateWeather(newLocation[0], newLocation[1]);
     this.updateAqi(newLocation[0], newLocation[1])
   }

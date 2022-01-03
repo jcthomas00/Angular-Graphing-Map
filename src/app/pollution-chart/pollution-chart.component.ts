@@ -51,7 +51,6 @@ export class PollutionChartComponent implements OnInit {
           this.chart.chart?.update();
         }
         if(propName === 'rain'){
-          console.log("Rain: ", changes[propName].currentValue)
           this.barChartData[1].data=changes[propName].currentValue;
           this.chart.chart?.update();
         }

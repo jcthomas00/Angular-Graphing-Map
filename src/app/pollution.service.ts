@@ -18,7 +18,6 @@ export class PollutionService {
     end:number=new Date('12/1/2021').getTime() 
   ):Observable<any> => {
     const url = `${POLLUTION_BASE_URL}?lat=${lat}&lon=${lon}&start=${start}&end=${end}&appid=${POLLUTION_APP}`
-    console.log(url)
     return this.http.get(url);
   }
 }
