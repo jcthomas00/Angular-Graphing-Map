@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const POLLUTION_BASE_URL = 'http://api.openweathermap.org/data/2.5/air_pollution/history',
+const POLLUTION_BASE_URL = 'https://api.openweathermap.org/data/2.5/air_pollution/history',
 POLLUTION_APP = '378e31da58c3d45665f8d069e85e1e88';
 
 @Injectable({

@@ -22,7 +22,7 @@ describe('WeatherService', () => {
 
     const req = httpController.expectOne({
       method: 'GET',
-      url: 'http://api.worldweatheronline.com/premium/v1/weather.ashx?key=f63a321451f34029829233245211612&q=29,95&fx=no&cc=no&mca=yes&format=json'
+      url: 'https://api.worldweatheronline.com/premium/v1/weather.ashx?key=f63a321451f34029829233245211612&q=29,95&fx=no&cc=no&mca=yes&format=json'
     })
 
     req.flush(

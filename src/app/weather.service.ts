@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const WEATHER_BASE_URL = `http://api.worldweatheronline.com/premium/v1/weather.ashx`,
+const WEATHER_BASE_URL = `https://api.worldweatheronline.com/premium/v1/weather.ashx`,
 WEATHER_APP = 'f63a321451f34029829233245211612';
 
 @Injectable({
