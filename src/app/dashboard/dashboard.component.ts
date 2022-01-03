@@ -49,10 +49,10 @@ export class DashboardComponent implements OnInit {
   updateAqi = (lat:number, lon:number):void => {
 
     //setting start and end date to pull historical data
-    const start = new Date('12/1/2020'),
-          end = new Date('12/1/2021');
+    // const start = new Date('12/1/2020'),
+    //       end = new Date('12/1/2021');
 
-    this.pollutionService.getPollution(start.getTime()%1000, end.getTime(),lat, lon).subscribe(
+    this.pollutionService.getPollution(lat, lon).subscribe(
       (res) => {
         //response contains hourly pollution data so get monthly average
         const monthlyMeasurements:number = Math.floor(res.list.length/12);
